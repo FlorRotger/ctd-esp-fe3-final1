@@ -1,0 +1,33 @@
+nav {
+    background-color: rgb(160, 226, 253);
+    display: flex;  
+    align-items: center;
+    gap: 200px;
+}
+nav .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    width: 500px;
+}
+
+nav h2 {
+    color: #09046b;
+}
+
+
+a {
+    color: #635e5e;
+    text-decoration: none;
+    margin: 15px;
+    cursor: pointer;
+}
+a:hover {
+    color: rgb(8, 7, 7);
+}
+nav button {
+    border-radius: 8px;
+    border-style: none;
+    padding: 2px;
+}
+

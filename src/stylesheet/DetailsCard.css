@@ -1,0 +1,16 @@
+.dentista-Details{
+    text-align: center;
+       width: 800px; 
+    margin: 0 auto;
+}
+  
+
+li {
+list-style: none;
+}
+
+.volver{
+    text-decoration: underline;
+    
+  
+}

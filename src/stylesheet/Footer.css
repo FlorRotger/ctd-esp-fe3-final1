@@ -1,0 +1,31 @@
+footer {
+    display: flex;
+    justify-content: space-around;
+    gap: 800px;
+    align-items: center;
+    padding: 2rem;
+    background-color:rgb(160, 226, 253);
+    width: 100%;
+    margin-top: 50px;
+    height: 5px;
+    position: fixed;
+    bottom: 0;
+}
+footer > img{
+    border-radius: 10px;
+    width: 25%;
+}
+footer > p{
+    margin: 0;
+    padding-top: 0.7rem;
+}
+
+footer > div{
+  display: flex;
+  gap: 10px;
+}
+footer .iconos{
+  width: 35px;
+  height: 35px;
+  color: black
+}

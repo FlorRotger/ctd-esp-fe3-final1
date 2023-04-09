@@ -1,0 +1,7 @@
+.contact {
+    display: grid;
+    place-items: center;
+    padding: 80px;
+    font-size: larger;
+    
+  }
