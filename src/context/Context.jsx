@@ -1,28 +1,34 @@
-import React, { createContext, useState, useReducer } from "react";
+import React, { createContext, useState } from "react";
 
 //contexto recopilamos valores para acceder a otra vista
 
 //declaracion del contexto
 export const NewContext = createContext({});
 
-//creamos un provider
 const NewContextProvider = ({ children }) => {
-const [isLogged, setIsLogged] = useState(false);
+ 
+  const [isLogged, setIsLogged] = useState(
+    localStorage.getItem("auth") ? true : false
+  );
 
-//cuando se loggean cambia a true (manejador)
+  //cuando se loggean cambia a true (manejador)
+  const handleLogin = () => {
+    setIsLogged(true);
+  localStorage.setItem("auth", true);
+  };
 
-const handleLogin = () => setIsLogged(true);
-
-const propiedades = {
+  const propiedades = {
     isLogged,
-    handleLogin
-}
+    handleLogin,
+  };
 
-  return (
-  <NewContext.Provider value={propiedades}>
-    {children}
+    return (
+    <NewContext.Provider value={ propiedades}>
+      {children}
     </NewContext.Provider>
-  )
+  );
 };
+
+//creamos un provider
 
 export default NewContextProvider;

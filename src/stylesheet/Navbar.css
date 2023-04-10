@@ -31,3 +31,10 @@ nav button {
     padding: 2px;
 }
 
+.dark {
+    background-color: #12121296;
+    color: white;
+  }
+  .dark > a {
+    color: white;
+  }

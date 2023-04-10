@@ -1,13 +1,18 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import "../stylesheet/Footer.css"
+import {DarkThemeContext} from '../context/DarkThemeContext';
 
 const Footer = () => {
+  const { isModoOscuro, setIsModoOscuro } = useContext(DarkThemeContext);
+
+
+
   return (
-    <footer>
+    <footer className={isModoOscuro ? "dark" : "app"}>
             <img src="./images/DH.png" alt='DH-logo'/>
 
             <div>
