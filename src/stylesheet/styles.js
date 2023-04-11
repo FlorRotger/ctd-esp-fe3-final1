@@ -1,5 +1,5 @@
 import {styled} from '@mui/material/styles';
-import fondo from '../assets/images/fondo.jpg';
+import fondo from '../assets/images/44406.jpg';
 import { Box } from '@mui/material';
 
 export const AuthContainer = styled(Box)`
@@ -13,12 +13,12 @@ export const AuthContainer = styled(Box)`
 `;
 
 export const Glass = styled(Box)`
-  background: rgba(255, 255, 255, 0.17);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba( 255, 255, 255, 0.75 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 6.5px );
+-webkit-backdrop-filter: blur( 6.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
   width: 400px;
   display: flex;
   flex-direction: column;
