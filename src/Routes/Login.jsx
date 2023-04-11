@@ -2,6 +2,8 @@ import React, { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { NewContext } from "../context/Context";
 import { Box, Button, TextField } from "@mui/material";
+import { AuthContainer, Glass } from '../layout/styles.js'
+
 
 const Login = () => {
   const [values, setValues] = useState({ email: "", password: "" }); //capturamos valor
@@ -18,11 +20,14 @@ const Login = () => {
   };
 
   return (
+    <AuthContainer>
+      <Glass>
     <Box
       component="form"
       sx={{
         display: "flex",
         flexDirection: "column",
+        justifyContent: "center",
         gap: "20px",
         width: "20vw",
       }}
@@ -52,6 +57,8 @@ const Login = () => {
         Ingresar
       </Button>
     </Box>
+      </Glass>
+    </AuthContainer>
   );
 };
 

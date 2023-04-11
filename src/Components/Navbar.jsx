@@ -2,7 +2,7 @@ import React, {useContext} from "react";
 import { Link } from "react-router-dom";
 import "../stylesheet/Navbar.css";
 import { DarkThemeContext } from "../context/DarkThemeContext";
-import { Button } from "@mui/material";
+
 
 
 //Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
@@ -34,7 +34,7 @@ const Navbar = () => {
         <Link to="/contact">Contact</Link>
         <Link to="/favs">Favs</Link>
         
-        <button onClick={handleModoDark} >TEMA</button>
+        <button onClick={handleModoDark} >Change theme</button>
       </div>
     </nav>
   );

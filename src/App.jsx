@@ -8,7 +8,6 @@ import {
 import { DarkThemeContext } from "./context/DarkThemeContext";
 import { ProtectedRoutes } from "./Components/ProtectedRoute";
 import NewContextProvider from "./context/Context";
-import { NewContext } from "./context/Context";
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 import { useContext } from "react";

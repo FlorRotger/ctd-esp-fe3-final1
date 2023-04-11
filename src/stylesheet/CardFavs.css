@@ -1,0 +1,29 @@
+.cardFavs img {
+    border-radius: 50%;
+    width:50%
+}
+.cardFavs {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.6rem 0.6rem 0 0.6rem;
+  
+    
+    
+   
+  }
+
+
+  .cardFavs-grid {
+    padding-bottom: rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    text-align: center;
+    margin: 0 auto;
+   
+  }
+
+
+

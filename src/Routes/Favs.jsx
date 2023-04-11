@@ -1,7 +1,9 @@
 import React, { useContext } from "react";
 import Card from "../Components/Card";
-import { useActionData } from "react-router-dom";
 import { FavContext } from "../context/FavContext";
+import "../stylesheet/CardFavs.css"
+
+
 
 //Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
 
@@ -12,14 +14,17 @@ const Favs = () => {
   return (
     <>
       <h1>Dentists Favs</h1>
-      <div className="card-grid">
-        {state.data?.map((data) => (
-
-        <p>{data.name}</p>
-        
-        ))
-        }
-
+      <div className="cardFavs-grid">
+      <section >
+      {state.data?.map((data) => (
+          <div className="cardFavs">
+            <img src="./images/doctor.jpg"
+               />
+            <h5> {data.name}</h5>
+            <p>{data.username}</p>
+          </div>
+        ))}
+      </section>
       </div>
 
       </>
